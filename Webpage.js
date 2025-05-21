@@ -16,8 +16,11 @@ function romanToInteger(romano) {
     let prev = 0;
     for (let i = romano.length - 1; i >= 0; i--) {
       const actual = valores[romano[i]];
-      if (actual < prev) total -= actual;
-      else total += actual;
+      if (actual < prev) {
+        total -= actual;
+      } else {
+        total += actual;
+      }
       prev = actual;
     }
   
