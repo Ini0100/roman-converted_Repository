@@ -27,7 +27,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Lint
-        run: node_modules/eslint/bin/eslint.js -c eslint.config.js script.js
+        run: node_modules/eslint/bin/eslint.js -c eslint.config.js Webpage.js
   
   test:
     # machine in which the job is executed (docker)
